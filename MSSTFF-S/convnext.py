@@ -5,12 +5,6 @@ from tensorflow.keras import layers
 
 
 class Block(tf.keras.Model):
-    """ConvNeXt block.
-
-    References:
-        (1) https://arxiv.org/abs/2201.03545
-        (2) https://github.com/facebookresearch/ConvNeXt/blob/main/models/convnext.py
-    """
 
     def __init__(self, dim, drop_path=0.0, layer_scale_init_value=1e-6, **kwargs):
         super(Block, self).__init__(**kwargs)
